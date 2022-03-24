@@ -1,8 +1,8 @@
 import React from 'react'
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css"
 import "./style/main.css"
-import { Routes, Route, Link } from "react-router-dom";
+// import { Routes, Route, Link } from "react-router-dom";
 
 import Home from './Components/Home'
 import About from './Components/About'
@@ -32,7 +32,7 @@ function App() {
         <div id="sidebar">
           <div id="blogname"><a href="/">chh's blog</a></div>
           <div id="myself">
-            <div id="avatar"><a href="/"><img src={avatarjpg} /></a></div>
+            <div id="avatar"><a href="/"><img src={avatarjpg} alt={"avatar"} /></a></div>
             <div id="name"><a href="/">chh</a></div>
           </div>
           <div id="keys">
@@ -64,9 +64,9 @@ function App() {
           </div>
           <hr class="line" />
           <div id="links">
-            <a href="https://space.bilibili.com/39995854" target="_blank"><img src={bilibilisvg} class="icon" alt="" /></a>
-            <a href="https://github.com/chh0" target="_blank"><img src={githubsvg} class="icon" alt="" /></a>
-            <a href="https://music.163.com/#/user/home?id=4873561041" target="_blank"><img src={neteasecloudsvg} class="icon" alt="" /></a>
+            <a href="https://space.bilibili.com/39995854" target="_blank" rel="noreferrer"><img src={bilibilisvg} class="icon" alt="" /></a>
+            <a href="https://github.com/chh0" target="_blank" rel="noreferrer"><img src={githubsvg} class="icon" alt="" /></a>
+            <a href="https://music.163.com/#/user/home?id=4873561041" target="_blank" rel="noreferrer"><img src={neteasecloudsvg} class="icon" alt="" /></a>
           </div>
         </div>
         <div id="contentbox">

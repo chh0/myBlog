@@ -150,6 +150,8 @@ fs.readdir('../../', (err, files)=>{
         if(/.md$/.test(name)){
             con = fs.readFileSync("../../"+name, "utf-8")
             stat = fs.statSync("../../"+name)
+            con = con.replace(/blogPics/g, "https://cdn.jsdelivr.net/gh/chh0/blogPics")
+            // console.log(con)
 
             if(con.split('\r\n')[1]){
                 ar = con.split('\r\n')

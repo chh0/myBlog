@@ -1,6 +1,8 @@
-cd ./src/mds/bin/lib
-node ./maker.js
-cd ../../../../
+$ErrorActionPreference ="Stop"
+
+cd ./src/mds
+./save.ps1
+cd ../..
 npm run build
 cd ./build
 git init
