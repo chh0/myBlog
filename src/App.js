@@ -85,7 +85,8 @@ function App() {
                 }
               />
             </Routes>
-            <div id="tail">本站已经运行了{year}年{month}月{day}日o(*￣▽￣*)ブ<br /><br /></div>
+            <div id="tailposition"> </div>
+            <div id="tail">本站已经运行了{year}年{month}月{day}日o(*￣▽￣*)ブ</div>
           </div>
         </div>
       </div>
