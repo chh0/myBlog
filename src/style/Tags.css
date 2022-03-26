@@ -9,3 +9,16 @@
     flex-wrap: wrap;
     padding: 30px;
 }
+
+.tagNameBox {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 32px;
+    margin: 10px;
+    padding: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease 0s;
+}
+
+.tagNameBox:hover {
+    transform: scale(1.2);
+}

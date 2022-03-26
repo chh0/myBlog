@@ -20,15 +20,14 @@ const Tags = () => {
     let cnt = 0
     for (let i of Object.keys(all.tagList)){
         tagNameStyle = {
-            "font-size":"32px",
-            "margin": "10px",
-            "padding": "6px",
-            "background-color": "rgba(255, 255, 255, 0.7)",
             "color": colorList[(cnt++) % colorList.length],
-            "box-shadow": "3px 3px 3px rgba(0, 0, 0, 0.3)",
         }
         List.push(
-            <Link to={'/tag/'+i}><span className='tagsName' style={tagNameStyle}>{i}</span></Link>
+            <Link to={'/tag/'+i}>
+                <div className='tagNameBox'>
+                    <span className='tagsName' style={tagNameStyle}>{i}</span>
+                </div>
+            </Link>
         )
     }
     return (
