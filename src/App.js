@@ -1,12 +1,14 @@
 import React from 'react'
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import "./App.css"
 import "./style/main.css"
-// import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 import Home from './Components/Home'
 import About from './Components/About'
 import Article from './Components/Article'
+import Archives from './Components/Archives'
+import Categories from './Components/Categories'
 
 import avatarjpg from './asset/avatar.jpg'
 import bilibilisvg from './asset/bilibili.svg'
@@ -14,6 +16,7 @@ import githubsvg from './asset/github.svg'
 import neteasecloudsvg from './asset/netease-cloud.svg'
 import booksvg from './asset/book.svg'
 import playsvg from './asset/play.svg'
+// import all from "./mds/all"
 
 
 function App() {
@@ -37,13 +40,13 @@ function App() {
           </div>
           <div id="keys">
             <div>
-              <a href="/guidang"><span>归档</span></a>
-              <a href="/guidang"><span>10</span></a>
+              <Link to="/archives"><span>归档</span></Link>
+              <Link to="/archives"><span>10</span></Link>
             </div>
             <div>|</div>
             <div>
-              <a href="/fenlei"><span>分类</span></a>
-              <a href="/fenlei"><span>7</span></a>
+              <Link to="/categories"><span>分类</span></Link>
+              <Link to="/categories"><span>7</span></Link>
             </div>
             <div>|</div>
             <div>
@@ -76,6 +79,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="article/:num" element={<Article />} />
+              <Route path="archives" element={<Archives />} />
+              <Route path="categories" element={<Categories />} />
               <Route
                 path="*"
                 element={

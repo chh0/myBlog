@@ -21,6 +21,9 @@ function Home() {
   }
   return (
     <main className="Home">
+      <div id="HomeHead">
+        <h1>欢迎来到chh的小站~</h1>
+      </div>
       {articles}
     </main>
   );

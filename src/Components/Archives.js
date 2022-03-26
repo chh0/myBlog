@@ -1,20 +1,26 @@
 import React from 'react'
-import { useParams } from "react-router-dom";
-import mds from "../mds/all"
+import all from "../mds/all"
+import "../style/Archives.css"
+import DateList from './Template/DateList';
 
 const Archives = () => {
-    let params = useParams();
-    if(mds.articles[params.num]){
-        return (
-            <div className="md">
-                <div dangerouslySetInnerHTML = {{__html:mds.articles[params.num].con}} ></div>
-            </div>
-        )
-    }else{
-        return (
-            <div>这里什么都没有哦</div>
+    let years = Object.keys(all.dateList)
+    let List = []
+    let nums = 0
+    let list = Object.keys(all.articles)
+    nums = list.length
+    for (let i of years) {
+        List.push(
+            <DateList year={i} />
         )
     }
+    return (
+        <div id="Archives">
+            <h1 id="ArchivesTitle">归档</h1>
+            <h3 id="ArchivesTitleNum">共计{nums}篇</h3>
+            {List}
+        </div>
+    )
 }
 
 export default Archives;
