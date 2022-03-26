@@ -79,6 +79,11 @@ body {
     padding: 4px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
+    transition: transform 1s ease 0s;
+}
+
+#myself #avatar:hover {
+    transform: rotateZ(180deg)
 }
 
 #myself #avatar img {
@@ -147,8 +152,8 @@ body {
 
 #cards div a img {
     vertical-align: middle;
+    transition: transform 1s ease 0s;
 }
-
 #links {
     width: 256px;
     display: flex;

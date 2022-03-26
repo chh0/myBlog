@@ -9,6 +9,9 @@ import About from './Components/About'
 import Article from './Components/Article'
 import Archives from './Components/Archives'
 import Categories from './Components/Categories'
+import Tags from './Components/Tags'
+import CategoryPage from './Components/CategoryPage';
+import TagPage from './Components/TagPage';
 
 import avatarjpg from './asset/avatar.jpg'
 import bilibilisvg from './asset/bilibili.svg'
@@ -50,8 +53,8 @@ function App() {
             </div>
             <div>|</div>
             <div>
-              <a href="/biaoqian"><span>标签</span></a>
-              <a href="/biaoqian"><span>8</span></a>
+              <Link to="/tags"><span>标签</span></Link>
+              <Link to="/tags"><span>8</span></Link>
             </div>
           </div>
           <hr class="line" />
@@ -81,6 +84,9 @@ function App() {
               <Route path="article/:num" element={<Article />} />
               <Route path="archives" element={<Archives />} />
               <Route path="categories" element={<Categories />} />
+              <Route path="tags" element={<Tags />} />
+              <Route path="category/:cate" element={<CategoryPage />} />
+              <Route path="tag/:tag" element={<TagPage />} />
               <Route
                 path="*"
                 element={

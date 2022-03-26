@@ -15,14 +15,14 @@ const CategoriesCard = (props) => {
         <div className="CategoriesCard" style={CategoriesCardStyle}>
             <div className="CategoriesCardContainer">
                 <div className="CategoriesCardInner">
-                    <div className="CategoriesCardTitle">
-                        <div>
-                            <Link to="/">
-                            <h1>{props.cate}</h1>
-                            <h2>共计{all.cateList[props.cate].length}篇</h2>
-                            </Link>
+                    <Link to={`/category/${props.cate}`}>
+                        <div className="CategoriesCardTitle">
+                            <div>
+                                    <h1>{props.cate}</h1>
+                                    <h2>共计{all.cateList[props.cate].length}篇</h2>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
