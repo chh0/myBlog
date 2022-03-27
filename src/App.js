@@ -12,6 +12,7 @@ import Categories from './Components/Categories'
 import Tags from './Components/Tags'
 import CategoryPage from './Components/CategoryPage';
 import TagPage from './Components/TagPage';
+import BackGround from './Components/Template/BackGround';
 
 import avatarjpg from './asset/avatar.jpg'
 import bilibilisvg from './asset/bilibili.svg'
@@ -19,7 +20,8 @@ import githubsvg from './asset/github.svg'
 import neteasecloudsvg from './asset/netease-cloud.svg'
 import booksvg from './asset/book.svg'
 import playsvg from './asset/play.svg'
-// import all from "./mds/all"
+
+
 
 
 function App() {
@@ -32,14 +34,15 @@ function App() {
   let day = Math.floor(days - year*365 - month*30)
   return (
     <div className="App">
-      <div id="background"></div>
+      <BackGround />
+      {/* <div id="background"></div>  */}
       <div id="main">
         <div id="sidebarposition"></div>
         <div id="sidebar">
-          <div id="blogname"><a href="/">chh's blog</a></div>
+          <div id="blogname"><Link to="/">chh's blog</Link></div>
           <div id="myself">
-            <div id="avatar"><a href="/"><img src={avatarjpg} alt={"avatar"} /></a></div>
-            <div id="name"><a href="/">chh</a></div>
+            <div id="avatar"><Link to="/"><img src={avatarjpg} alt={"avatar"} /></Link></div>
+            <div id="name"><Link to="/">chh</Link></div>
           </div>
           <div id="keys">
             <div>
