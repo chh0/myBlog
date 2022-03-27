@@ -19,7 +19,11 @@
 }
 
 .md p {
-    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
 }
 
 .md h1, h2, h3, h4, h5, h6 {
@@ -105,8 +109,16 @@
 }
 
 .md li {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    list-style: none;
+}
+
+.md li::before {
+    content: "•";
+    transform: translateX(100px);
+    font-weight: 900;
 }
 
 .md ol {
