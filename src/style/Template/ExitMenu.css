@@ -1,0 +1,26 @@
+#ExitMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* @media screen and (min-width: 901px) {
+    #ExitMenu {
+        width: 0;
+        background-color: rgba(0,0,0,0);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #ExitMenu {
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+} */
+
+/* a {
+    transform: translateX(320px);
+} */

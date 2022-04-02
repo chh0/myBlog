@@ -45,3 +45,20 @@
     display: inline-block;
     font-size: 28px;
 }
+
+.DateListTitle {
+    transition: transform 0.5s ease 0s;
+}
+
+.DateListTitle:hover {
+    transform: scale(1.1);
+}
+
+.DateListTitle a {
+    transition: background-color 0.5s ease 0s;
+}
+
+.DateListTitle a:hover {
+    background-color: rgba(130, 137, 238, 0.6);
+    color: aliceblue;
+}

@@ -21,16 +21,31 @@ a {
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+    z-index: 10;
+    transition: transform 0.5s ease 0s;
 }
 
 #contentbox {
     position: absolute;
     right: 16px;
-    left: 352px;
+    /* left: 352px; */
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: row;
+    transition: left 0.5s ease 0s;
 }
+
+/* @media screen and (min-width: 901px) {
+    #contentbox {
+        left: 352px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #contentbox {
+        left: 16px;
+    }
+} */
 
 #content {
     width: 100%;
@@ -171,14 +186,17 @@ body {
 }
 
 .icon {
+    border-radius: 50%;
     width: 28px;
     padding: 8px;
+    background-color: rgba(0,0,0,0);
     transition: transform 1s ease 0s;
 }
 
 .icon:hover {
     /* transform: scale(1.05) */
-    transform: rotateZ(180deg)
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: rotateZ(180deg);
 }
 
 .textimg {

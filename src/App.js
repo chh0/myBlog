@@ -3,6 +3,7 @@ import React from 'react'
 import "./App.css"
 import "./style/main.css"
 import { Routes, Route, Link } from "react-router-dom";
+import all from "./mds/all"
 
 import Home from './Components/Home'
 import About from './Components/About'
@@ -13,6 +14,8 @@ import Tags from './Components/Tags'
 import CategoryPage from './Components/CategoryPage';
 import TagPage from './Components/TagPage';
 import BackGround from './Components/Template/BackGround';
+import ExitMenu from './Components/Template/ExitMenu';
+import SideButtom from './Components/Template/SideButtom';
 
 import avatarjpg from './asset/avatar.jpg'
 import bilibilisvg from './asset/bilibili.svg'
@@ -22,7 +25,25 @@ import booksvg from './asset/book.svg'
 import playsvg from './asset/play.svg'
 
 
-
+const SideHandle = () => {
+  let sb = document.getElementById("sidebar")
+  let EM = document.getElementById("ExitMenu")
+  let SB = document.getElementById("SideButtom")
+  if (JSON.stringify(getComputedStyle(sb)["transform"])[20] === '-'){
+      if(document.body.clientWidth <= 901){
+          EM.style.width = "100%"
+          sb.style.transform = "translateX(0px)"
+          SB.style.transform = "rotateZ(0)"
+      }
+  }else{
+      if(document.body.clientWidth <= 901){
+          EM.style.width = "0"
+          SB.style.transform = "rotateZ(180deg)"
+          sb.style.transform = "translateX(-352px)"
+      }
+  }
+  // alert(document.body.clientWidth)
+}
 
 function App() {
   let D = new Date()
@@ -35,10 +56,12 @@ function App() {
   return (
     <div className="App">
       <BackGround />
+      <ExitMenu />
+      <SideButtom />
       {/* <div id="background"></div>  */}
       <div id="main">
         <div id="sidebarposition"></div>
-        <div id="sidebar">
+        <div id="sidebar" onClick={SideHandle}>
           <div id="blogname"><Link to="/">chh's blog</Link></div>
           <div id="myself">
             <div id="avatar"><Link to="/"><img src={avatarjpg} alt={"avatar"} /></Link></div>
@@ -47,17 +70,17 @@ function App() {
           <div id="keys">
             <div>
               <Link to="/archives"><span>归档</span></Link>
-              <Link to="/archives"><span>10</span></Link>
+              <Link to="/archives"><span>{Object.keys(all.articles).length}</span></Link>
             </div>
             <div>|</div>
             <div>
               <Link to="/categories"><span>分类</span></Link>
-              <Link to="/categories"><span>7</span></Link>
+              <Link to="/categories"><span>{Object.keys(all.cateList).length}</span></Link>
             </div>
             <div>|</div>
             <div>
               <Link to="/tags"><span>标签</span></Link>
-              <Link to="/tags"><span>8</span></Link>
+              <Link to="/tags"><span>{Object.keys(all.tagList).length}</span></Link>
             </div>
           </div>
           <hr class="line" />
@@ -91,7 +114,7 @@ function App() {
               <Route path="category/:cate" element={<CategoryPage />} />
               <Route path="tag/:tag" element={<TagPage />} />
               <Route
-                path="*"
+                path="/:any"
                 element={
                   <main style={{ padding: "1rem" }}>
                     <p>There's nothing here!</p>
