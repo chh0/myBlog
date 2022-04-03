@@ -12,11 +12,6 @@
     transform: scale(1.05);
 }
 
-/* .ArticleCard :hover {
-    -webkit-box-shadow:0px 3px 3px #c8c8c8 ;
-    -moz-box-shadow:0px 3px 3px #c8c8c8 ;
-    box-shadow:0px 3px 3px #c8c8c8 ;
-} */
 
 .ArticleCardCon {
     top:0;
@@ -25,9 +20,10 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     right: 0;
     float:left;
+    z-index: 2;
 }
 .ArticleCardTitle {
-    font-size: 35px;
+    font-size: 1.5rem;
     color: rgb(0, 102, 48);
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -35,20 +31,22 @@
     overflow: hidden;
     word-wrap:break-word;
     word-break:normal;
-    margin: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    z-index: 2;
 }
 .ArticleCardText {
-    font-size: 25px;
+    font-size: 1.2rem;
     font-weight: 300;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     overflow: hidden;
     word-wrap:break-word;
     word-break:normal;
-    margin: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    z-index: 2;
 }
