@@ -1,7 +1,7 @@
 ```javascript
 {
 "title":"对hexo的尝试",
-"category":"代码",
+"category":"随记",
 "tags":["hexo","博客"],
 "date":["2021","5","20"]
 }

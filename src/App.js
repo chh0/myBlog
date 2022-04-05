@@ -16,6 +16,8 @@ import TagPage from './Components/TagPage';
 import BackGround from './Components/Template/BackGround';
 import ExitMenu from './Components/Template/ExitMenu';
 import SideButtom from './Components/Template/SideButtom';
+import Anime from './Components/Anime';
+import Books from './Components/Books';
 
 import avatarjpg from './asset/avatar.jpg'
 import bilibilisvg from './asset/bilibili.svg'
@@ -64,7 +66,7 @@ function App() {
         <div id="sidebar" onClick={SideHandle}>
           <div id="blogname"><Link to="/">chh's blog</Link></div>
           <div id="myself">
-            <div id="avatar"><Link to="/"><img src={avatarjpg} alt={"avatar"} /></Link></div>
+            <div id="avatar"><Link to="about"><img src={avatarjpg} alt={"avatar"} /></Link></div>
             <div id="name"><Link to="/">chh</Link></div>
           </div>
           <div id="keys">
@@ -86,12 +88,12 @@ function App() {
           <hr class="line" />
           <div id="cards">
             <div>
-              <a href="/books"><img src={booksvg} class="textimg" alt="" /></a>
-              <a href="/books">读书记录</a>
+              <Link to="/books"><img src={booksvg} class="textimg" alt="" /></Link>
+              <Link to="/books">我的书架</Link>
             </div>
             <div>
-              <a href="/animes"><img src={playsvg} class="textimg" alt="" /></a>
-              <a href="/animes">追番列表</a>
+              <Link to="/animes"><img src={playsvg} class="textimg" alt="" /></Link>
+              <Link to="/animes">追番列表</Link>
             </div>
           </div>
           <hr class="line" />
@@ -111,6 +113,8 @@ function App() {
               <Route path="archives" element={<Archives />} />
               <Route path="categories" element={<Categories />} />
               <Route path="tags" element={<Tags />} />
+              <Route path="animes" element={<Anime />} />
+              <Route path="books" element={<Books />} />
               <Route path="category/:cate" element={<CategoryPage />} />
               <Route path="tag/:tag" element={<TagPage />} />
               <Route

@@ -21,7 +21,7 @@ a {
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    z-index: 200;
+    z-index: 100;
     transition: transform 0.5s ease 0s;
 }
 
@@ -163,10 +163,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease 0s;
 }
 
 #cards div {
     margin: 4px;
+    transition: transform 0.5s ease 0s;
+}
+
+#cards div:hover {
+    transform: scale(1.2);
 }
 
 #cards div a {
