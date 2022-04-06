@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+// import React, { useEffect } from 'react';
 import "../../style/Template/BackGround.css"
 
 const BackGround = () => {

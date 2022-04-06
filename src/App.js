@@ -18,6 +18,7 @@ import ExitMenu from './Components/Template/ExitMenu';
 import SideButtom from './Components/Template/SideButtom';
 import Anime from './Components/Anime';
 import Books from './Components/Books';
+import Preload from './Components/Preload';
 
 import avatarjpg from './asset/avatar.jpg'
 import bilibilisvg from './asset/bilibili.svg'
@@ -60,6 +61,7 @@ function App() {
       <BackGround />
       <ExitMenu />
       <SideButtom />
+      <Preload />
       {/* <div id="background"></div>  */}
       <div id="main">
         <div id="sidebarposition"></div>

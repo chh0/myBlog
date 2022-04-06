@@ -1,0 +1,11 @@
+#preload {
+    z-index: -2;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+}
+
+#preload img {
+    max-width: 20%;
+    max-height: 20%;
+}
