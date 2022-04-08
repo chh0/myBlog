@@ -16,7 +16,7 @@ a {
     top: 24px;
     bottom: 80px;
     width: 320px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.65);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@ a {
     position: absolute;
     right: 16px;
     /* left: 352px; */
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.65);
     display: flex;
     flex-direction: row;
     transition: left 0.5s ease 0s;
