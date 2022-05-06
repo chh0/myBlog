@@ -15,7 +15,7 @@ const ArticleCard = (props) => {
             "float": "left",
             "width": "30%",
             "height": "200px",
-            "background": `url(${picid}) no-repeat center center`,
+            "background": `url(${picid}), url('https://tva1.sinaimg.cn/large/0072Vf1pgy1foxlnkwh9ij31hc0u0tqu.jpg') no-repeat center center`,
             "background-size": "cover",
             "border-top-left-radius": "50px",
             "border-bottom-left-radius": "50px",
