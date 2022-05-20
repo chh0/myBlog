@@ -17,7 +17,7 @@ const Preload = () => {
     // }, 10000)
     return (
         <div id="preload">
-            <img src={`https://cdn.jsdelivr.net/gh/chh0/pics/bg.jpg`} alt="" />
+            <img src={`https://raw.githubusercontent.com/chh0/pics/main/bg.jpg`} alt="" />
             {list}
         </div> 
     )
