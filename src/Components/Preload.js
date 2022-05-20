@@ -6,7 +6,8 @@ const Preload = () => {
     let list = []
     for (let cnt = 1; cnt <= 10; cnt++ ){
         list.push(
-            <img src={`https://cdn.jsdelivr.net/gh/chh0/pics/${cnt}.jpg`} alt="" />
+            <img src={`https://raw.githubusercontent.com/chh0/pics/main/${cnt}.jpg`} alt="" />
+            // <img src={`https://cdn.jsdelivr.net/gh/chh0/pics/${cnt}.jpg`} alt="" />
         )
     }
     // setInterval(()=>{
