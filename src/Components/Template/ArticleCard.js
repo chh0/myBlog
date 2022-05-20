@@ -4,7 +4,7 @@ import all from "../../mds/all"
 
 const ArticleCard = (props) => {
     let mdid = props.mdid
-    let picid = 'https://cdn.jsdelivr.net/gh/chh0/pics/' + props.mdnum + '.jpg'
+    let picid = ' https://raw.githubusercontent.com/chh0/pics/main/' + props.mdnum + '.jpg'
     let digest = all.articles[mdid].con.split("<p>")[1]
     digest = digest.split("</p>")[0]
     let ImgStyle = {}

@@ -150,7 +150,9 @@ fs.readdir('../../', (err, files)=>{
         if(/.md$/.test(name)){
             con = fs.readFileSync("../../"+name, "utf-8")
             stat = fs.statSync("../../"+name)
-            con = con.replace(/blogPics/g, "https://cdn.jsdelivr.net/gh/chh0/blogPics")
+            con = con.replace(/blogPics/g, "https://raw.githubusercontent.com/chh0/blogPics/main")
+            // con = con.replace(/blogPics/g, "https://cdn.jsdelivr.net/gh/chh0/blogPics")
+            //https://raw.githubusercontent.com/chh0/blogPics/main/220504-2.jpeg
             // console.log(con)
 
             if(con.split('\r\n')[1]){

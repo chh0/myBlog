@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('https://cdn.jsdelivr.net/gh/chh0/pics/bg.jpg'), url('https://tva1.sinaimg.cn/large/0072Vf1pgy1foxlnkwh9ij31hc0u0tqu.jpg') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/chh0/pics/main/bg.jpg'), url('https://tva1.sinaimg.cn/large/0072Vf1pgy1foxlnkwh9ij31hc0u0tqu.jpg') no-repeat center center;
     /* background: url('https://cdn.jsdelivr.net/gh/chh0/pics/bg.jpg') no-repeat center center; */
     background-size: cover;
     transition: all 1s;

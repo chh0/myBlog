@@ -7,7 +7,8 @@ const CategoriesCard = (props) => {
     let CategoriesCardStyle = {
         "width": "300px",
         "height": "180px",
-        "background": `url('https://cdn.jsdelivr.net/gh/chh0/pics/${props.cnt}.jpg') no-repeat center center`,
+        "background": `url(' https://raw.githubusercontent.com/chh0/pics/main/${props.cnt}.jpg') no-repeat center center`,
+        // "background": `url('https://cdn.jsdelivr.net/gh/chh0/pics/${props.cnt}.jpg') no-repeat center center`,
         "background-size": "cover",
         "margin": "20px"
     }
