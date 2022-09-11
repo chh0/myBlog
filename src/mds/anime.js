@@ -17,7 +17,7 @@ const info = [
     {
         "name": "风灵玉秀",
         "comment":"难得看一部国人的作品...同样是吹爆！双女主的故事写得这么精彩，而且很有中国的气息...不愧是DDF大佬。（从B站2022拜年纪入的坑，说来B站为啥要把“祭”改为“纪”啊，受到了什么奇怪的压力吗",
-        "link":"https://www.csx365.com/vodplay/31587-7-1.html"
+        "link":"https://halihali7.com/acg/25991/1.html?qp=bj"
     },
     {
         "name": "东方梦想夏乡",
@@ -42,7 +42,7 @@ const info = [
     {
         "name": "奇蛋物语",
         "comment":"很新的一部番了，设定又是非常神奇...然而结尾太仓促了点，很多隐藏的设定或情节都还没来得及讲清楚啊...（吐槽一句，阿B太多番要会员了...叔叔你还我小破站",
-        "link":"http://www.ppxdm.com/player/943-2-1.html"
+        "link":"http://www.dmh8.com/player/7972-0-0.html"
     },
     {
         "name": "凉宫春日的消失",
@@ -52,12 +52,12 @@ const info = [
     {
         "name": "凉宫春日的忧郁",
         "comment":"经典老番了，在那个时代强的不行...女主是个充满幻想、总想着找有趣的事情但也非常自我的人，她的想法会改变世界但她却不自知，同时对男主阿虚（キョン）有着特殊感情。男主莫的感情的吐槽超搞笑，歌曲god knows值得一听",
-        "link":"http://www.ppxdm.com/player/2297-1-1.html"
+        "link":"https://halihali7.com/acg/810/1.html"
     },
     {
         "name": "寒蝉鸣泣之时",
         "comment":"悬疑恐怖类，第一季讲谜面，第二季谜底，之后2020的业是谜面，卒是谜底，此外还有不少番外篇。前两季还是挺精彩的（墙内在线播放的资源真的难找...我当时是用种子下下来看的...",
-        "link":"http://www.ppxdm.com/player/1506-1-1.html"
+        "link":"http://www.dmh8.com/player/5064-0-0.html"
     },
     {
         "name": "甘城光辉游乐园",
@@ -102,7 +102,7 @@ const info = [
     {
         "name": "月色真美",
         "comment":"高中生青涩的爱情故事，就是那种作为观众看了都感觉着急的故事...番名也是有典故的哦",
-        "link":"https://www.9494.tv/dongmanplay/687-5-1.html"
+        "link":"https://halihali7.com/acg/2130/1.html"
     },
     {
         "name": "萤火之森",
@@ -112,7 +112,7 @@ const info = [
     {
         "name": "樱花庄的宠物女孩",
         "comment":"这部番我印象深刻的就两个点，女一椎名真白在樱花树下的唯美场景，以及在女一的天赋衬托下，努力却怎么都无法赶上的男主与女二的无奈...",
-        "link":"https://www.dm530p.net/play/13094-3-0.html"
+        "link":"https://halihali7.com/acg/2563/1.html"
     },
     {
         "name": "路人女主的养成方法",
@@ -122,12 +122,12 @@ const info = [
     {
         "name": "Re：从零开始的异世界生活",
         "comment":"初中那会的番了，当时班里已经有人在看，然而我大学才看...异世界穿越轮回题材，也是个经典了，值得一看（不知道B站没有25集版是不是和血腥暴力元素有关）。女仆雷姆拉姆两人的人气比女主还高...",
-        "link":"http://www.qdqzgc.com/player/912-1-1.html"
+        "link":"https://halihali7.com/acg/1696/1.html"
     },
     {
         "name": "魔女之旅",
         "comment":"讲了天才魔女伊雷娜（イレイナ）的遭遇，以童话故事的风格包装，但有些故事的内核好黑暗呀...可能值得一提的是，这个魔女太屑了，人称屑魔女...",
-        "link":"http://www.huada.biz/M-1523-4-1.html"
+        "link":"http://www.dmh8.com/player/7900-2-0.html"
     },
     {
         "name": "青春猪头少年不会梦到兔女郎学姐",
@@ -142,7 +142,7 @@ const info = [
     {
         "name": "缘〇空",
         "comment":"乡下学校，父母不在，有妹有房...",
-        "link":"http://www.laoxinfan.com/show/yuanzhikong/play-1-0.html"
+        "link":"https://halihali7.com/acg/19888/1.html"
     },
     {
         "name": "辉夜大小姐想让我告白～天才们的恋爱头脑战～",
@@ -162,7 +162,7 @@ const info = [
     {
         "name": "某科学的一方通行",
         "comment":"质量还算过得去，只是想着追完这个系列",
-        "link":"https://www.bilibili.com/bangumi/play/ss28002/"
+        "link":"https://halihali7.com/acg/18540/1.html"
     },
     {
         "name": "某科学的超电磁炮",
@@ -171,8 +171,8 @@ const info = [
     },
     {
         "name": "狐妖小红娘",
-        "comment":"入坑番，世界观很新奇！",
-        "link":"https://www.123k.cc/view/13381.html"
+        "comment":"入坑番，国漫，世界观很新奇！",
+        "link":"https://halihali7.com/acg/3773/148.html?qp=bj"
     },
 ]
 
