@@ -1,6 +1,7 @@
 import React from 'react';
 // import React, { useEffect } from 'react';
 import "../style/Preload.css"
+import pics from '../asset/pics'
 
 const Preload = () => {
     let list = []

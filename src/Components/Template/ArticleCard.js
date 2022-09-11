@@ -1,10 +1,11 @@
 import React from 'react'
 import "../../style/Template/ArticleCard.css"
 import all from "../../mds/all"
+import pics from '../../asset/pics'
 
 const ArticleCard = (props) => {
     let mdid = props.mdid
-    let picid = ' https://raw.githubusercontent.com/chh0/pics/main/' + props.mdnum + '.jpg'
+    // let picid = ' https://raw.githubusercontent.com/chh0/pics/main/' + props.mdnum + '.jpg'
     let digest = all.articles[mdid].con.split("<p>")[1]
     digest = digest.split("</p>")[0]
     let ImgStyle = {}
@@ -15,7 +16,7 @@ const ArticleCard = (props) => {
             "float": "left",
             "width": "30%",
             "height": "200px",
-            "background": `url(${picid}), url('https://tva1.sinaimg.cn/large/0072Vf1pgy1foxlnkwh9ij31hc0u0tqu.jpg') no-repeat center center`,
+            "background": `url(${pics[props.mdnum + '.jpg']}), url('https://tva1.sinaimg.cn/large/0072Vf1pgy1foxlnkwh9ij31hc0u0tqu.jpg') no-repeat center center`,
             "background-size": "cover",
             "border-top-left-radius": "50px",
             "border-bottom-left-radius": "50px",
@@ -26,7 +27,7 @@ const ArticleCard = (props) => {
             "width": "0"
         }
         CardStyle = {
-            "background": `url(${picid}) no-repeat center center`,
+            "background": `url(${pics[props.mdnum + '.jpg']}) no-repeat center center`,
             "background-size": "cover",
         }
         ConStyle = {

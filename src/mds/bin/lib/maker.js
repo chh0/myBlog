@@ -135,6 +135,8 @@ function makeTagList(mds){
     return tagList
 }
 
+var blogPics = require('../../../asset/blogPics')
+
 fs.readdir('../../', (err, files)=>{
     if(err){
         return console.log(err)
@@ -146,11 +148,16 @@ fs.readdir('../../', (err, files)=>{
     let str = ''
     let info = {}
     let infos = []
+    let keys = Object.getOwnPropertyNames(blogPics)
     for(let name of files){
         if(/.md$/.test(name)){
             con = fs.readFileSync("../../"+name, "utf-8")
             stat = fs.statSync("../../"+name)
-            con = con.replace(/blogPics/g, "https://raw.githubusercontent.com/chh0/blogPics/main")
+            for (let key of keys){
+                var re =new RegExp('blogPics/' + key,"g")
+                con = con.replace(re, blogPics[key])
+            }
+            // con = con.replace(/blogPics/g, "https://raw.githubusercontent.com/chh0/blogPics/main")
             // con = con.replace(/blogPics/g, "https://cdn.jsdelivr.net/gh/chh0/blogPics")
             //https://raw.githubusercontent.com/chh0/blogPics/main/220504-2.jpeg
             // console.log(con)
@@ -191,4 +198,5 @@ fs.readdir('../../', (err, files)=>{
     let y = JSON.stringify(all)
     let z = "const info = " + y + "\nexport default info"
     fs.writeFileSync("../../all.js", z, "utf-8")
+    console.log("all.js generated")
 })
