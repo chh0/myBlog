@@ -103,6 +103,7 @@
     margin: 10px;
     background-color: rgb(255, 255, 255, 0.3);
     padding: 20px;
+    overflow-x:auto;
 }
 
 .md pre code {
