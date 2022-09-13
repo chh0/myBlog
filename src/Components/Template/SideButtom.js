@@ -14,9 +14,9 @@ const SideButtom = () => {
             SB.style.transform = "rotateZ(0)"
         }else{
             CB.style.left = "16px"
-            sb.style.transform = "translateX(0px)"
-            EM.style.width = "100%"
-            SB.style.transform = "rotateZ(0)"
+            sb.style.transform = "translateX(-352px)"
+            EM.style.width = "0"
+            SB.style.transform = "rotateZ(180deg)"
         }
     })
     const SideHandle = () => {
