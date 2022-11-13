@@ -1,5 +1,10 @@
 const info = [
     {
+        "name": "学园孤岛",
+        "comment":"萌系 热血 校园 社团 的 丧尸片 ？ ",
+        "link":"https://www.bilibili.com/bangumi/play/ep63870"
+    },
+    {
         "name": "星际牛仔-天国之扉",
         "comment":"论理是那种精彩、教科书式的番，但我看了却没有觉得怎么样...只是对那个手榴弹形打火机印象比较深...应该是我的鉴赏能力还不够...",
         "link":"https://www.bilibili.com/bangumi/play/ss3008/"
